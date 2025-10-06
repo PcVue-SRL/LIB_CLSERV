@@ -45,13 +45,6 @@ External utilities included:
 - **Shared Central Folder** accessible in read/write mode from all stations  
 - **Project structure** as follows: C:\PcVueProjects\MyProject
 
-├── LIB\LIB_CLSERV
-├── TP
-│ ├── user_copy.bat
-│ ├── user_load.bat
-│ ├── svrestart.exe
-│ ├── playwav.exe
-│ └── nircmd.exe
 
 ## 🚀 Quick Installation Guide
 
