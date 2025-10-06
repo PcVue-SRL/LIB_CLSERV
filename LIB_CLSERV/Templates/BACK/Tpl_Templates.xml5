@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<TemplatesRoot Name="" SchemaVersion="16.0.0">
+<Library Name="LIB_CLSERV">
+<CategoriesList/>
+<TemplatesList>
+<Template Name="LAN">
+<AutoNaming_Prefix/>
+<AutoNaming_StartValue>1</AutoNaming_StartValue>
+<AutoNaming_FixedDigits>2</AutoNaming_FixedDigits>
+<AutoNaming_Step>1</AutoNaming_Step>
+<Enable_Instance>true</Enable_Instance>
+<ParametersList>
+<ParameterInstance Name="LIB_CLSERV/pAllClient">
+<DescriptionLang1>pAllClient</DescriptionLang1>
+<DescriptionLang2>pAllClient</DescriptionLang2>
+<Value/>
+</ParameterInstance>
+<ParameterInstance Name="LIB_CLSERV/pAllServerList">
+<DescriptionLang1>pAllServerList</DescriptionLang1>
+<DescriptionLang2>pAllServerList</DescriptionLang2>
+<Value/>
+</ParameterInstance>
+<ParameterInstance Name="LIB_CLSERV/pHServerList">
+<DescriptionLang1>pHServerList</DescriptionLang1>
+<DescriptionLang2>pHServerList</DescriptionLang2>
+<Value/>
+</ParameterInstance>
+</ParametersList>
+<TemplatesList/>
+<ObjectsList>
+<Object Name="ACTIVE">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">1 when local station is active in managing audit events</Property>
+<Property id="Eqt_Type" Reset="false" Substitute="false">B</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="ServerListName" Reset="false" Substitute="true">LIB_CLSERV/pAllServerList</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="RST_OVERRIDE">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">When 1 enable global override to restart even if an user is logged on local station</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="StationMonitoring">
+<DescriptionLang1>Desc StationMonitoring</DescriptionLang1>
+<InternalType>3</InternalType>
+<SvType>4</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="MimicTemplate_Name" Reset="false" Substitute="false">TEMPLATE_DASHBOARD_DARK</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="SYS_AUDIT">
+<InternalType>2</InternalType>
+<SvType>25</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="ClientListName" Reset="false" Substitute="false">LCALL</Property>
+<Property id="ServerListName" Reset="false" Substitute="true">LIB_CLSERV/pHServerList</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList>
+<Object Name="LoginLogout">
+<InternalType>5</InternalType>
+<SvType>68</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="ArchiveAttribute2Record" Reset="false" Substitute="false">#@A1,#@A2,#@A3,#@A4,#@A5</Property>
+<Property id="AttributesFilter" Reset="false" Substitute="false">=(#A1 == AUDIT)</Property>
+<Property id="FilterEventMask_Acknowledge" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_AlarmOffAck" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_AlarmOffNotAck" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_AlarmOnAck" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_AlarmOnNotAck" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_ChangeTo0" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_Command" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_LogonLogoff" Reset="false" Substitute="false">0</Property>
+<Property id="FilterEventMask_MaskAlarm" Reset="false" Substitute="false">0</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+</ObjectsList>
+</Object>
+<Object Name="USERCONF_LOCKED">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">When 1 User Configuration is locked by a station, on attr 3 username, on 4 station</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="UseExtendedAttributes" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+</ObjectsList>
+<InheritedTemplatesList/>
+</Template>
+<Template Name="STATION">
+<AutoNaming_Prefix/>
+<AutoNaming_StartValue>1</AutoNaming_StartValue>
+<AutoNaming_FixedDigits>2</AutoNaming_FixedDigits>
+<AutoNaming_Step>1</AutoNaming_Step>
+<Enable_Instance>true</Enable_Instance>
+<ParametersList/>
+<TemplatesList/>
+<ObjectsList>
+<Object Name="BUZZER">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">When 1, enable an intermittent sound</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Quando vale 1, abilita il cicalino.</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="Saved" Reset="false" Substitute="false">0</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="EN_BUZZER">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">When 1, enable sound on alarm presence</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Quando vale 1, abilita il cicalina se presente un allarme</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">1</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="Saved" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="LOGIN">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">Trigger bit for user login event.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Bit di trigger per evento di login utente.</Property>
+<Property id="Domain" Reset="false" Substitute="false">AUDIT</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">0</Property>
+<Property id="Nature" Reset="false" Substitute="false">LOGIN</Property>
+<Property id="UseExtendedAttributes" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="LOGOUT">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">Trigger bit for user logout event.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Bit di trigger per evento di logout utente.</Property>
+<Property id="Domain" Reset="false" Substitute="false">AUDIT</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">0</Property>
+<Property id="Nature" Reset="false" Substitute="false">LOGOUT</Property>
+<Property id="UseExtendedAttributes" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="ONLINE">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">0</Property>
+<Property id="Description" Reset="false" Substitute="false">Holds station status; attribute 3 = station name.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Stato della stazione; attributo 3 = nome stazione.</Property>
+<Property id="ExtText3" Reset="false" Substitute="true">=TemplateInstance.Name</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="Saved" Reset="false" Substitute="false">0</Property>
+<Property id="UseExtendedAttributes" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList>
+<Object Name="Expression01">
+<InternalType>5</InternalType>
+<SvType>19</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Description" Reset="false" Substitute="false">Flag set to 1 if the current station is active in the realtime redundancy association.</Property>
+<Property id="EnableBitVarName" Reset="false" Substitute="false">LAN.ACTIVE</Property>
+<Property id="Expression" Reset="false" Substitute="true">="System." + TemplateInstance.Branch + "0C || System." + TemplateInstance.Branch + "0S"</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+</ObjectsList>
+</Object>
+<Object Name="RESET">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">When 1, triggers SCADA restart.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Quando vale 1, richiede il riavvio dello SCADA.</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="Saved" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="RUNNINGMODE">
+<InternalType>2</InternalType>
+<SvType>2</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">Execution mode: 1=Console, 2=Service, 3=RDS.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Modalità di esecuzione: 1=Console, 2=Service, 3=RDS.</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Type" Reset="false" Substitute="false">2</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="StationSymb">
+<DescriptionLang1>Desc StationSymb</DescriptionLang1>
+<InternalType>4</InternalType>
+<SvType>5</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Description" Reset="false" Substitute="false"></Property>
+<Property id="SymbolTemplate_Name" Reset="false" Substitute="false">LIB_CLSERV/Station</Property>
+<Property id="Visibility" Reset="true" Substitute="false">0;6400</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="SV_VERS">
+<InternalType>2</InternalType>
+<SvType>3</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">Current PcVue product version.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Versione corrente di PcVue.</Property>
+<Property id="InitialValue" Reset="false" Substitute="false"></Property>
+<Property id="Type" Reset="false" Substitute="false">3</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="TOT_ALA_CNT">
+<InternalType>2</InternalType>
+<SvType>2</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="ClientListName" Reset="false" Substitute="false"></Property>
+<Property id="Description" Reset="false" Substitute="false">Counter for total active alarms no Ack.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Contatore totale degli allarmi attivi non riconosciuti.</Property>
+<Property id="ServerListName" Reset="false" Substitute="false">ALLSERVER</Property>
+<Property id="Type" Reset="false" Substitute="false">2</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList>
+<Object Name="BuzzerReset">
+<InternalType>5</InternalType>
+<SvType>10</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="EnableExpression" Reset="false" Substitute="false">=0</Property>
+<Property id="ProgramFunction" Reset="false" Substitute="false">ResetSuona</Property>
+<Property id="ProgramName" Reset="false" Substitute="false">LIB_CLSERV/GENERAL</Property>
+<Property id="TriggeringCondition" Reset="false" Substitute="false">2</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="BuzzerTrigger">
+<InternalType>5</InternalType>
+<SvType>10</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="EnableExpression" Reset="false" Substitute="false">+1</Property>
+<Property id="ProgramFunction" Reset="false" Substitute="false">SetSuona</Property>
+<Property id="ProgramName" Reset="false" Substitute="false">LIB_CLSERV/GENERAL</Property>
+<Property id="TriggeringCondition" Reset="false" Substitute="false">2</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="Counter_OnNoAckAlm">
+<InternalType>5</InternalType>
+<SvType>12</SvType>
+<ObjectItem SubType="Counter_OnNoAckAlm">
+<Properties>
+<Property id="ServerListName" Reset="false" Substitute="false">ALLSERVER</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+</ObjectsList>
+</Object>
+<Object Name="USER">
+<InternalType>2</InternalType>
+<SvType>3</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">Current logged username</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Nome dell’utente attualmente connesso.</Property>
+<Property id="InitialValue" Reset="false" Substitute="false"></Property>
+<Property id="Type" Reset="false" Substitute="false">3</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList>
+<Object Name="Trace">
+<InternalType>5</InternalType>
+<SvType>10</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="EnableVarName" Reset="false" Substitute="true">=TemplateInstance.Parent.Branch + ".ACTIVE"</Property>
+<Property id="ProgramBranch" Reset="false" Substitute="true">=TemplateInstance.FullBranch</Property>
+<Property id="ProgramFunction" Reset="false" Substitute="false">LogUser</Property>
+<Property id="ProgramName" Reset="false" Substitute="false">LIB_CLSERV/GENERAL</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+</ObjectsList>
+</Object>
+<Object Name="USER_DISC">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">When 1, force user logoff.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Quando vale 1, forza la disconnessione</Property>
+<Property id="InitialValue" Reset="false" Substitute="false">0</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="USER_RELOAD">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">When 1, reloads USER.DAT configuration file.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Quando vale 1, ricarica il file di configurazione USER.DAT.</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="VERSION_L">
+<InternalType>2</InternalType>
+<SvType>3</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">Current library version.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Versione corrente della libreria progetto.</Property>
+<Property id="Saved" Reset="false" Substitute="false">-1</Property>
+<Property id="Type" Reset="false" Substitute="false">3</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+<Object Name="VERSION_P">
+<InternalType>2</InternalType>
+<SvType>3</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Description" Reset="false" Substitute="false">Current project version.</Property>
+<Property id="DescriptionAlt" Reset="false" Substitute="false">Versione corrente del progetto.</Property>
+<Property id="Saved" Reset="false" Substitute="false">-1</Property>
+<Property id="Type" Reset="false" Substitute="false">3</Property>
+<Property id="WithInitialValue" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+</ObjectsList>
+<InheritedTemplatesList/>
+</Template>
+<Template Name="TEST">
+<AutoNaming_Prefix/>
+<AutoNaming_StartValue>1</AutoNaming_StartValue>
+<AutoNaming_FixedDigits>2</AutoNaming_FixedDigits>
+<AutoNaming_Step>1</AutoNaming_Step>
+<Enable_Instance>true</Enable_Instance>
+<ParametersList/>
+<TemplatesList/>
+<ObjectsList>
+<Object Name="TEST_ALARM">
+<InternalType>2</InternalType>
+<SvType>1</SvType>
+<ObjectItem SubType="">
+<Properties>
+<Property id="Alarm" Reset="false" Substitute="false">-1</Property>
+<Property id="Command" Reset="false" Substitute="false">-1</Property>
+<Property id="Log" Reset="false" Substitute="false">-1</Property>
+<Property id="Log0_1" Reset="false" Substitute="false">-1</Property>
+<Property id="Log1_0" Reset="false" Substitute="false">-1</Property>
+</Properties>
+</ObjectItem>
+<ObjectsList/>
+</Object>
+</ObjectsList>
+<InheritedTemplatesList/>
+</Template>
+</TemplatesList>
+</Library>
+</TemplatesRoot>
+</root>

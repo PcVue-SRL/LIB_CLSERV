@@ -1,0 +1,213 @@
+================================================== 
+[30/09/2025 17:00:51,77] Inizio procedura copia 
+[30/09/2025 17:00:51,79] Ultima versione trovata: 1.6.4 
+[30/09/2025 17:00:51,79] Copia da "\\srv-pcvue.pcvue.cloud\Central\TEST_17\1.6.4\C\user.dat" a "C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\user.dat" 
+        1 file(s) copied.
+[30/09/2025 17:00:51,81] Copia completata con successo 
+[30/09/2025 17:00:51,81] Fine procedura copia 
+================================================== 
+================================================== 
+[30/09/2025 17:07:29,15] Inizio procedura copia 
+[30/09/2025 17:07:29,17] Ultima versione trovata: 1.6.4 
+[30/09/2025 17:07:29,17] Copia da "\\srv-pcvue.pcvue.cloud\Central\TEST_17\1.6.4\C\user.dat" a "" 
+        1 file(s) copied.
+        1 file(s) copied.
+[30/09/2025 17:07:29,20] Copia completata con successo 
+[30/09/2025 17:07:29,20] Fine procedura copia 
+================================================== 
+================================================== 
+[01/10/2025 11:43:08,88] Inizio procedura copia 
+[01/10/2025 11:43:08,91] Ultima versione trovata: 1.6.5 
+[01/10/2025 11:43:08,91] Copia da "\\srv-pcvue.pcvue.cloud\Central\TEST_17\1.6.5\C\user.dat" a "" 
+        1 file(s) copied.
+        1 file(s) copied.
+[01/10/2025 11:43:08,94] Copia completata con successo 
+[01/10/2025 11:43:08,94] Fine procedura copia 
+================================================== 
+================================================== 
+[01/10/2025 12:22:30,38] Inizio procedura copia 
+[01/10/2025 12:22:30,41] Ultima versione trovata: 1.6.5 
+[01/10/2025 12:22:30,41] Copia da "\\srv-pcvue.pcvue.cloud\Central\TEST_17\1.6.5\C\user.dat" a "" 
+        1 file(s) copied.
+        1 file(s) copied.
+[01/10/2025 12:22:30,44] Copia completata con successo 
+[01/10/2025 12:22:30,44] Fine procedura copia 
+================================================== 
+================================================== 
+[01/10/2025 12:22:42,40] Inizio procedura copia 
+[01/10/2025 12:22:42,43] Ultima versione trovata: 1.6.5 
+[01/10/2025 12:22:42,43] Copia da "\\srv-pcvue.pcvue.cloud\Central\TEST_17\1.6.5\C\user.dat" a "" 
+        1 file(s) copied.
+        1 file(s) copied.
+[01/10/2025 12:22:42,46] Copia completata con successo 
+[01/10/2025 12:22:42,47] Fine procedura copia 
+================================================== 
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : mercoledç 1 ottobre 2025 12:29:27
+   Source : \\srv-pcvue.pcvue.cloud\Central\User\
+     Dest : C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+
+    Files : user.dat
+	    
+  Options : /TEE /DCOPY:DA /COPY:DATS /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+2025/10/01 12:29:27 ERROR 2 (0x00000002) Accessing Source Directory \\srv-pcvue.pcvue.cloud\Central\User\
+The system cannot find the file specified.
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : mercoledç 1 ottobre 2025 12:29:27
+   Source : \\srv-pcvue.pcvue.cloud\Central\User\
+     Dest : C:\ARC Informatique\PcVue 16\data\usr\TEST_17\CTEMP\
+
+    Files : user.dat
+	    
+  Options : /TEE /DCOPY:DA /COPY:DATS /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+2025/10/01 12:29:27 ERROR 2 (0x00000002) Accessing Source Directory \\srv-pcvue.pcvue.cloud\Central\User\
+The system cannot find the file specified.
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : mercoledç 1 ottobre 2025 12:32:12
+   Source : \\srv-pcvue.pcvue.cloud\Central\User\
+     Dest : C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+
+    Files : user.dat
+	    
+  Options : /TEE /DCOPY:DA /COPY:DATS /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+	                   1	\\srv-pcvue.pcvue.cloud\Central\User\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         0         1         0         0         0
+   Bytes :     1.7 k         0     1.7 k         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : mercoledç 1 ottobre 2025 12:32:12
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : mercoledç 1 ottobre 2025 12:32:12
+   Source : \\srv-pcvue.pcvue.cloud\Central\User\
+     Dest : C:\ARC Informatique\PcVue 16\data\usr\TEST_17\CTEMP\
+
+    Files : user.dat
+	    
+  Options : /TEE /DCOPY:DA /COPY:DATS /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+	                   1	\\srv-pcvue.pcvue.cloud\Central\User\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         0         1         0         0         0
+   Bytes :     1.7 k         0     1.7 k         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : mercoledç 1 ottobre 2025 12:32:12
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : giovedç 2 ottobre 2025 13:10:18
+   Source : C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+     Dest : \\srv-pcvue.pcvue.cloud\Central\User\
+
+    Files : user.dat
+	    
+  Options : /TEE /DCOPY:DA /COPY:DATS /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+	                   1	C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+	    Newer     		    1999	User.dat100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :     1.9 k     1.9 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             249.875 Bytes/sec.
+   Speed :              14,298 MegaBytes/min.
+   Ended : giovedç 2 ottobre 2025 13:10:18
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : venerdç 3 ottobre 2025 17:08:00
+   Source : C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+     Dest : \\srv-pcvue.pcvue.cloud\Central\User\
+
+    Files : user.dat
+	    
+  Options : /TEE /DCOPY:DA /COPY:DATS /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+	                   1	C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         0         1         0         0         0
+   Bytes :     1.9 k         0     1.9 k         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : venerdç 3 ottobre 2025 17:08:00
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : venerdç 3 ottobre 2025 17:08:03
+   Source : C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+     Dest : \\srv-pcvue.pcvue.cloud\Central\User\
+
+    Files : user.dat
+	    
+  Options : /TEE /DCOPY:DA /COPY:DATS /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+	                   1	C:\ARC Informatique\PcVue 16\data\usr\TEST_17\C\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         0         1         0         0         0
+   Bytes :     1.9 k         0     1.9 k         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : venerdç 3 ottobre 2025 17:08:03
+

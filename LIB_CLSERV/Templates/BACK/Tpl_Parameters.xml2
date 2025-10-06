@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<ParametersRoot Name="" SchemaVersion="16.0.0">
+<Library Name="LIB_CLSERV">
+<CategoriesList/>
+<ParametersList>
+<Parameter Name="pAllClient">
+<nDataType>0</nDataType>
+<nType>0</nType>
+<DefaultValue>ALLCLIENT</DefaultValue>
+<Empty>0</Empty>
+</Parameter>
+<Parameter Name="pAllServerList">
+<nDataType>0</nDataType>
+<nType>0</nType>
+<DefaultValue>ALLSERVER</DefaultValue>
+<Empty>0</Empty>
+</Parameter>
+<Parameter Name="pClientList">
+<nPType>1</nPType>
+<nDataType>0</nDataType>
+<nType>0</nType>
+<DefaultValue/>
+<GblOverwriteMode>0</GblOverwriteMode>
+<GblObjectType>1</GblObjectType>
+<GblPropertyName>ClientListName</GblPropertyName>
+<GblPropertyDefaultValue/>
+<GblFilters/>
+</Parameter>
+<Parameter Name="pHServerList">
+<nDataType>0</nDataType>
+<nType>0</nType>
+<DefaultValue>SRV_LIST_HISTORICAL</DefaultValue>
+<Empty>0</Empty>
+</Parameter>
+<Parameter Name="pServerList">
+<nPType>1</nPType>
+<nDataType>0</nDataType>
+<nType>0</nType>
+<DefaultValue/>
+<GblOverwriteMode>0</GblOverwriteMode>
+<GblObjectType>1</GblObjectType>
+<GblPropertyName>ServerListName</GblPropertyName>
+<GblPropertyDefaultValue/>
+<GblFilters/>
+</Parameter>
+</ParametersList>
+</Library>
+</ParametersRoot>
+</root>
