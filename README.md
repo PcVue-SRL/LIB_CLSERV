@@ -3,7 +3,7 @@
 **LIB_CLSERV** is a library designed to extend **PcVue 16** functionality in **redundant Client-Server architectures**.  
 It provides a complete set of tools for **centralized management of multiple stations**, **automatic synchronization** of users and configurations, and **real-time monitoring** of the SCADA network status.
 
-![Dashboard Client-Server](./DOCS/Screen_Mimic.png)
+![Dashboard Client-Server](./DOCS/Image/Screen_Mimic.png)
 
 ## ⚙️ Main Features
 
