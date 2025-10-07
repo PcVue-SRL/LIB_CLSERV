@@ -64,4 +64,4 @@ End Sub
 
 ## 📘 Full Technical Documentation
 For full installation instructions, detailed configuration steps, and complete SCADA Basic code, refer to the comprehensive manual:
-➡️ [**LIB_CLSERV Technical Guide (PDF)**](./DOCS/LIB_CLSERV_Technical_Guide.pdf)
+➡️ [**LIB_CLSERV Technical Guide (PDF)**]("./DOCS)
