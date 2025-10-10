@@ -43,7 +43,7 @@ External utilities included:
 - **PcVue 16**  
 - **Redundant architecture** with at least two servers and multiple clients configured  
 - **Shared Central Folder** accessible in read/write mode from all stations  
-- **Project structure** as follows: C:\PcVueProjects\MyProject
+- **Project structure** as follows: C:\Arc Informatique\PcVue 16\Usr\MyProject
 
 
 ## 🚀 Quick Installation Guide
